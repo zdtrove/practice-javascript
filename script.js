@@ -1,9 +1,8 @@
-var global = "global";
+b();
+console.log(a);
 
-function a() {
-    var global = "overriding global";
-    console.log("Inside a():", global);
+var a = "hello";
+
+function b() {
+    console.log('Called b!');
 }
-console.log("Outside a() before function a() execution:", global);
-a();
-console.log("Outside a() after function a() execution:", global);

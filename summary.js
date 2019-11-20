@@ -75,6 +75,27 @@
 // }
 // x();
 
+/* ----------------- [Function scope] ----------------- */
+
+// var x = function() {
+//     var y = 1;
+// }
+// // console.log(y); // cause error
+// x();
+
+/* ----------------- [Scope shadowing and overriding] ----------------- */
+
+// var global = "global";
+
+// function a() {
+//     global = "overriding global"; // overriding
+//     // var global = "redefining global"; // shadowing
+//     console.log("Inside a():", global);
+// }
+// console.log("Outside a() before function a() execution:", global);
+// a();
+// console.log("Outside a() after function a() execution:", global);
+
 /* ----------------- [Constants] ----------------- */
 
 // "use strict";
@@ -92,14 +113,6 @@
 // const PI = 3.14;
 // PI = 2; // it cause error when using const keyword
 // console.log(PI);
-
-/* ----------------- [Function scope] ----------------- */
-
-// var x = function() {
-//     var y = 1;
-// }
-// // console.log(y); // cause error
-// x();
 
 /* ----------------- [Hoisting] ----------------- */
 
